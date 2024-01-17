@@ -33,7 +33,12 @@ export class AppComponent {
   }
 
   onButtonClick() {
-    console.log(this.includeLetters);
+    console.log(`
+      About to generate a password with the following:
+      Includes letters: ${this.includeLetters}
+      Includes numbers: ${this.includeNumbers}
+      Includes symbols: ${this.includeSymbols}
+    `);
     this.password = 'MY PASSWORD!!!';
   }
 }
